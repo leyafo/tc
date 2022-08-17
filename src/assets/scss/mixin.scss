@@ -1,0 +1,16 @@
+@function px2rem($px) {
+  @return ($px / 100px) + rem;
+}
+
+@mixin iphoneX {
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+$placeholder: #3b4965;
+
+// font
+$font_PingFangSCRegular: "DINAlternateBold", "PingFangSCRegular", "GothamBook",
+  "Microsoft YaHei", arial, SimSun, sans-serif, tahoma;
+
+$font_PingFangMedium: "DINAlternateBold", "PingFangMedium", "GothamMedium",
+  "Microsoft YaHei", arial, SimSun, sans-serif, tahoma;

@@ -1,0 +1,144 @@
+@import "@/assets/scss/mixin.scss";
+
+.lockup-confirm-page {
+  padding: 0 px2rem(30px);
+  min-height: 100vh;
+  background: #f7f7f7;
+
+  .lockup-info {
+    padding-top: px2rem(32px);
+    .info-item {
+      padding: px2rem(24px);
+      background: #ffffff;
+      border-radius: px2rem(16px);
+
+      display: flex;
+      justify-content: space-between;
+      & + .info-item {
+        margin-top: px2rem(32px);
+      }
+      .label {
+        font-size: px2rem(28px);
+        font-weight: 400;
+        color: #333333;
+        line-height: px2rem(28px);
+      }
+      .value {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        .icon-token {
+          margin-right: px2rem(8px);
+          width: px2rem(32px);
+          height: px2rem(32px);
+        }
+        .number {
+          font-size: px2rem(32px);
+          font-weight: bold;
+          color: #333333;
+        }
+        .unit {
+          margin-left: px2rem(8px);
+          font-size: px2rem(28px);
+          font-weight: 400;
+          color: #666666;
+        }
+        .top {
+          display: flex;
+          align-items: center;
+          .address {
+            font-size: px2rem(28px);
+            font-weight: 400;
+            color: #333333;
+          }
+          .icon-copy {
+            margin-left: px2rem(8px);
+            width: px2rem(28px);
+            height: px2rem(28px);
+            background: url("./images/icon-copy.png") center no-repeat;
+            background-size: contain;
+          }
+          .fee {
+            font-size: px2rem(28px);
+            font-weight: bold;
+            color: #999999;
+          }
+          .icon-arrow {
+            margin-left: px2rem(8px);
+            width: px2rem(28px);
+            height: px2rem(28px);
+            background: url("./images/icon-arrow-right.png") center no-repeat;
+            background-size: contain;
+          }
+        }
+        .link {
+          margin-top: px2rem(20px);
+          font-size: px2rem(24px);
+          font-weight: 400;
+          color: #006eff;
+        }
+        .tips {
+          margin-top: px2rem(20px);
+          font-size: px2rem(24px);
+          font-weight: 400;
+          color: #999999;
+        }
+      }
+    }
+  }
+
+  .btn-wrap {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: px2rem(30px);
+    background: #fff;
+  }
+}
+
+.wallet-password-modal {
+  .modal-title {
+    padding-top: px2rem(40px);
+    font-size: px2rem(32px);
+    font-weight: 400;
+    color: #333333;
+    line-height: px2rem(32px);
+    text-align: center;
+  }
+  .modal-content {
+    margin: px2rem(60px) auto;
+    padding: 0 px2rem(30px);
+
+    .ant-input-affix-wrapper {
+      background: #ffffff;
+      border-radius: px2rem(12px);
+    }
+    .ant-input {
+      height: px2rem(60px);
+    }
+  }
+  .modal-bottom {
+    border-top: px2rem(1px) solid #dddddd;
+    display: flex;
+    button {
+      height: px2rem(88px);
+      font-size: px2rem(32px);
+      font-weight: 400;
+
+      border: none;
+      outline: none;
+
+      flex: 1;
+      & + button {
+        border-left: px2rem(1px) solid #dddddd;
+      }
+    }
+    .btn-ok {
+      color: #006eff;
+    }
+    .btn-cancel {
+      color: #999999;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+@import "@/assets/scss/mixin.scss";
+
+.c-modal {
+  .ant-modal-content {
+    padding: 0;
+    background: #eeeeef;
+    border-radius: px2rem(28px);
+    overflow: hidden;
+  }
+  .ant-modal-body {
+    padding: 0;
+  }
+}

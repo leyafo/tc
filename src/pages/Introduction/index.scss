@@ -1,0 +1,74 @@
+@import "@/assets/scss/mixin.scss";
+
+.introduction-page {
+  margin: 0 px2rem(30px);
+  .header {
+    margin-top: px2rem(32px);
+    display: flex;
+    align-items: center;
+    .icon {
+      margin-right: px2rem(28px);
+      width: px2rem(100px);
+      height: px2rem(100px);
+    }
+    .text {
+      font-size: px2rem(40px);
+      font-weight: 500;
+      color: #333333;
+    }
+  }
+  .content {
+    margin-top: px2rem(24px);
+    font-size: px2rem(24px);
+    font-weight: 400;
+    color: #666666;
+    line-height: px2rem(36px);
+  }
+
+  .info {
+    margin-top: px2rem(48px);
+    .info-item {
+      display: flex;
+      justify-content: space-between;
+
+      & + .info-item {
+        margin-top: px2rem(32px);
+      }
+      .label {
+        font-size: px2rem(24px);
+        font-weight: 400;
+        color: #999999;
+      }
+      .value {
+        font-size: px2rem(28px);
+        font-weight: bold;
+        color: #333333;
+      }
+    }
+  }
+
+  .project-link {
+    margin-top: px2rem(50px);
+    .link-title {
+      font-size: px2rem(32px);
+      font-weight: 600;
+      color: #333333;
+    }
+    .link-list {
+      display: flex;
+      flex-wrap: wrap;
+      .link-item {
+        margin: px2rem(24px) px2rem(32px) 0 0;
+
+        padding: 0 px2rem(24px);
+        height: px2rem(50px);
+        font-size: px2rem(24px);
+        font-weight: 500;
+        color: #006eff;
+        line-height: px2rem(50px);
+        background: rgba(0, 110, 255, 0.1);
+        border-radius: px2rem(8px);
+      }
+    }
+  }
+}

@@ -1,0 +1,66 @@
+// 全局
+@import "media";
+@import "reset";
+@import "mixin";
+@import "base";
+// ui库
+// @import "vant-reset/index.scss";
+// 组件
+// @import "fonts.scss";
+// @import "table";
+// @import "pop";
+// @import "dialog";
+
+.c-btn {
+  padding: 0 px2rem(48px);
+  width: 100%;
+  height: px2rem(88px);
+  font-size: px2rem(36px);
+  color: #fff;
+  background: #006eff;
+  border-radius: px2rem(8px);
+  border: none;
+  outline: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &[disabled] {
+    color: #d2d2d2;
+    background: #e5e6e9;
+    cursor: not-allowed;
+  }
+  &.c-btn-small {
+    height: px2rem(64px);
+    font-size: px2rem(28px);
+  }
+}
+
+.ant-btn-primary[disabled],
+.ant-btn-primary[disabled]:hover,
+.ant-btn-primary[disabled]:focus,
+.ant-btn-primary[disabled]:active {
+  color: #00000040;
+  border-color: #d9d9d9;
+  background: #f5f5f5;
+  text-shadow: none;
+  box-shadow: none;
+}
+
+.nodata {
+  padding: px2rem(44px) 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .img {
+    width: px2rem(160px);
+    height: px2rem(160px);
+  }
+  .text {
+    margin-top: px2rem(24px);
+    font-size: px2rem(28px);
+    font-weight: 400;
+    color: #999999;
+  }
+}

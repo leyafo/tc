@@ -1,0 +1,15 @@
+@font-face {
+  font-family: "DINAlternateBold";
+  src: url("~@/assets/fonts/DINAlternateBold/DINAlternateBold.woff")
+      format("woff"),
+    url("~@/assets/fonts/DINAlternateBold/DINAlternateBold.ttf")
+      format("truetype");
+}
+
+.fonts-loaded {
+  // font-family: "DINAlternateBold", "PingFangSCRegular", "GothamBook",
+  //   "Microsoft YaHei", arial, SimSun, sans-serif, tahoma;
+  .din-alternate-bold {
+    font-family: "DINAlternateBold";
+  }
+}

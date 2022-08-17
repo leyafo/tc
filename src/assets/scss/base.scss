@@ -1,0 +1,63 @@
+body {
+  @extend .flex-column;
+  position: relative;
+  line-height: 1;
+  font-size: px2rem(24px);
+  // font-family: "Microsoft YaHei", arial, SimSun, sans-serif, tahoma;
+  color: #333333;
+  background-color: #fff;
+  align-items: stretch;
+  @include iphoneX;
+
+  &::-webkit-scrollbar {
+    width: 0;
+  }
+}
+
+input {
+  &::-webkit-input-placeholder {
+    color: #999999;
+    font-family: inherit;
+  }
+
+  &:-moz-placeholder {
+    color: #999999;
+    font-family: inherit;
+  }
+
+  &::-moz-placeholder {
+    color: #999999;
+    font-family: inherit;
+  }
+
+  &:-ms-input-placeholder {
+    color: #999999;
+    font-family: inherit;
+  }
+}
+
+// Reuse
+.flexa {
+  display: flex;
+  align-items: center;
+}
+
+.flexc {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-center {
+  @extend .flexa;
+  justify-content: center;
+}
+
+.flex-space {
+  @extend .flexa;
+  justify-content: space-between;
+}

@@ -1,0 +1,37 @@
+@import "@/assets/scss/mixin.scss";
+
+.c-drawer {
+  .ant-drawer-content {
+    border-radius: px2rem(24px) px2rem(24px) 0px 0px;
+  }
+  .ant-drawer-body {
+    padding: 0 px2rem(30px);
+  }
+
+  .drawer-title {
+    position: relative;
+    height: px2rem(88px);
+    font-size: px2rem(28px);
+    font-weight: 400;
+    color: #999999;
+    line-height: px2rem(88px);
+    text-align: center;
+    .drawer-close {
+      position: absolute;
+      top: px2rem(22px);
+      right: 0;
+
+      width: px2rem(44px);
+      height: px2rem(44px);
+      background: url("./images/icon-close.png") center no-repeat;
+      background-size: contain;
+    }
+  }
+
+  .drawer-content {
+    padding: px2rem(24px) 0;
+    .drawer-bottom-wrap {
+      margin-bottom: px2rem(30px);
+    }
+  }
+}

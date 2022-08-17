@@ -1,0 +1,44 @@
+@import "@/assets/scss/mixin.scss";
+
+.network-wallet {
+  padding: px2rem(4px);
+  height: px2rem(52px);
+  background: rgba(0, 110, 255, 0.1);
+  border-radius: px2rem(28px);
+
+  display: flex;
+  .network {
+    padding: px2rem(6px) px2rem(16px) px2rem(6px) px2rem(6px);
+    height: px2rem(44px);
+    background: #006eff;
+    border-radius: px2rem(34px);
+
+    display: flex;
+    align-items: center;
+    .icon {
+      margin-right: px2rem(8px);
+      width: px2rem(32px);
+      height: px2rem(32px);
+    }
+    .text {
+      font-size: px2rem(20px);
+      font-weight: 500;
+      color: #ffffff;
+    }
+  }
+  .wallet {
+    padding: 0 px2rem(16px);
+    display: flex;
+    align-items: center;
+    .text {
+      padding-right: px2rem(10px);
+      font-size: px2rem(20px);
+      font-weight: 500;
+      color: #006eff;
+    }
+    .icon {
+      width: px2rem(24px);
+      height: px2rem(24px);
+    }
+  }
+}
