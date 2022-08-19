@@ -4,7 +4,7 @@
   "homepage": ".",
   "private": true,
   "dependencies": {
-    "@project-serum/anchor": "^0.14.0",
+    "@project-serum/anchor": "^0.25.0",
     "@solana/spl-token": "0.1.4",
     "@solana/web3.js": "^1.53.0",
     "@streamflow/stream": "^3.0.12",
