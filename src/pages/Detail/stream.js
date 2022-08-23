@@ -16,19 +16,27 @@ import {
 import * as web3 from "@solana/web3.js";
 let bs58 = require('bs58');
 
-
+let secretKey = Uint8Array.from([5,99,252,29,239,43,17,23,212,19,135,200,194,173,254,195,130,226,145,211,9,215,44,232,177,57,171,114,197,107,112,218,201,102,238,169,53,10,176,73,102,210,221,50,116,161,113,27,50,192,42,194,52,9,131,70,237,245,80,44,226,90,122,255]
+);
 // let sender = new Wallet(web3.Keypair.generate());
-let secretKey=bs58.decode("4mjycSgo5soR97uvAdRp6adZ7XP9h9umj4wwGQi4kF2Am8iDL8kmwAbyUpT2T71ERocPhdRpLGuBTHyrbw8QTfYK");
+//let secretKey=bs58.decode("4mjycSgo5soR97uvAdRp6adZ7XP9h9umj4wwGQi4kF2Am8iDL8kmwAbyUpT2T71ERocPhdRpLGuBTHyrbw8QTfYK");
 let sk = web3.Keypair.fromSecretKey(secretKey);
+console.log('keypair imported, pubkey:', sk.publicKey.toBase58());
 let sender = sk;
-let recipient = sk.publicKey;
-let mint = "Gssm3vfi8s65R31SBdmQRq6cKeYojGgup7whkw4VCiQj";
+let recipient = "37N2u6veYfL7GiJwBZsb9tCf8tHciTWJB6nov8hxDaP3";
+let mint = "CGp3SSqwe91Q4UrVL4wp8Tqsd6Q2AuyUzrjLj6yLwTwx";
 // console.log(sender)
 
-const sClient = new StreamClient(
+/*const sClient = new StreamClient(
   "https://api.devnet.solana.com",
   Cluster.Devnet,
   "confirmed"
+);*/
+const sClient = new StreamClient(
+    "http://localhost:8899",
+    Cluster.Devnet,
+    "confirmed",
+    "BXS9orh8Ph4teuXZmUh6fAwQ9KzMJS3vmocSFzeWSbEJ"
 );
 
 export default async function fn () {
